@@ -64,9 +64,9 @@ include "reusable_components/user_session.php"
     }
 
     ?>
-            <form class="d-flex mt-5" action="<?php echo $_SERVER["PHP_SELF"]; 
+            <form class="d-sm-flex d-block mt-5" action="<?php echo $_SERVER["PHP_SELF"]; 
                                                 ?>" method="POST" enctype="multipart/form-data">
-                <div class="col-3 text-center">
+                <div class="col-sm-3 col-12 text-center">
                     <img src="<?php  
                     
                     if ($image!='NULL') {
@@ -77,16 +77,17 @@ include "reusable_components/user_session.php"
                     }
                                 ?>" width="150px">
                     <input id="file-upload" type="file" name="image" />
-                    <div class="m-4 text-start">
+                </div>
+                <div class="col-sm-9 col-12 mx-sm-5 mx-0 px-sm-5 px-0">
+                    <div class="mb-3">
                         <label for="formGroupExampleInput" class="form-label">Role</label>
                         <input type="text" class="form-control col-10" id="formGroupExampleInput" placeholder="<?php echo $role 
-                                                                                                                ?>">
+                                                                                                                ?>" disabled>
+                    </div>
+                    <div class="mb-3">
                         <label for="name" class="form-label">Name</label>
                         <input type="text" class="form-control" id="name" placeholder="<?php echo $name ?>" disabled>
                     </div>
-                </div>
-                <div class="col-9 ms-5">
-
                     <div class="mb-3">
                         <label for="exampleInputUsername" class="form-label">Username</label>
                         <input type="text" class="form-control" id="exampleInputusername" disabled aria-describedby="username" name='username' value="<?php echo htmlspecialchars(isset($_POST['username']) ? $_POST['username'] : $username, ENT_QUOTES);  

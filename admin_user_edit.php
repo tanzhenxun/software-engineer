@@ -215,9 +215,9 @@ include "reusable_components/user_session.php"
                 }
             }
             ?>
-            <form class="d-flex mt-5" action="<?php echo $_SERVER["PHP_SELF"] . "?userid={$current_id}";
+            <form class="d-sm-flex d-block mt-5" action="<?php echo $_SERVER["PHP_SELF"] . "?userid={$current_id}";
                                                 ?>" method="POST" enctype="multipart/form-data">
-                <div class="col-3 text-center">
+                <div class="col-sm-3 col-12 text-center">
                     <img src="<?php
 
                                 if ($image != 'NULL') {
@@ -236,7 +236,7 @@ include "reusable_components/user_session.php"
                         <input type="text" class="form-control" id="name" placeholder="<?php echo $name ?>" disabled>
                     </div>
                 </div>
-                <div class="col-9 ms-5">
+                <div class="col-sm-9 col-12 mx-sm-5 mx-0 px-sm-2 px-0">
 
                     <div class="mb-3">
                         <label for="exampleInputUsername" class="form-label">Username</label>
@@ -263,7 +263,7 @@ include "reusable_components/user_session.php"
                             <option value="0" selected>False</option>
                         </select>
                     </div>
-                    <div class="d-flex mt-5">
+                    <div class="d-flex justify-content-center mt-5">
                         <button type="submit" class="btn btn-secondary col-4">Update</button>
                         <button type="button" class="btn btn-secondary ms-3 col-4" onclick="window.location.href = 'dashboard.php'">Cancel</button>
                     </div>
