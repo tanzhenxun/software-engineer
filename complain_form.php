@@ -193,7 +193,7 @@ include "reusable_components/user_session.php"
                     <input type="file" name="complaint_image" class='form-control' />
                 </div>
                 <div class="pt-3 text-center">
-                <button type="submit" class="btn btn-secondary col-sm-4 col-12 ">Send</button>
+                <button type="submit" class="btn btn-success col-sm-4 col-12 ">Send</button>
                 </div>
             </form>
         </section>

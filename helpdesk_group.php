@@ -65,7 +65,6 @@ include "reusable_components/user_session.php"
                                                         </div>                                                    
                                                     </a>
                                                     <div class=' ms-auto float-end'>
-                                                                    <i class='fa-regular fa-pen-to-square me-2'></i>
                                                                     <a type='button' onclick='del_group(\"$group_name\")'><i class='fa-regular fa-trash-can me-2'></i></a>             
                                                     </div>
                                                     ";
@@ -99,7 +98,7 @@ include "reusable_components/user_session.php"
                                                                     <td>Executive</td>
                                                                     <td>$status</td>
                                                                     <td>$date</td>
-                                                                    <td><a href='helpdesk_complain_detail.php?complaintID=$complaintID'><i class='fa-regular fa-pen-to-square'></i></a><a href='complain_detail.php?complaintID=$complaint_id'><i class='fa-solid fa-eye '></i></a></td>
+                                                                    <td class='d-flex justify-content-center align-items-center'><a href='helpdesk_complain_detail.php?complaintID=$complaintID'><i class='fa-regular fa-pen-to-square'></i></a><a href='complain_detail.php?complaintID=$complaint_id'><i class='fa-solid fa-eye '></i></a></td>
                                                                 </tr>";
                                         }
                                     }

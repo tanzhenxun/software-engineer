@@ -200,8 +200,8 @@ include "reusable_components/user_session.php"
                     </div>
                 </div>
                 <div class="d-flex justify-content-center m-auto mt-5">
-                    <button type="submit" class="btn btn-secondary col-4">Update</button>
-                    <button type="button" class="btn btn-secondary ms-3 col-4" onclick="window.location.href = 'dashboard.php'">Cancel</button>
+                    <button type="submit" class="btn btn-success col-4">Update</button>
+                    <button type="button" class="btn btn-danger ms-3 col-4" onclick="window.location.href = 'dashboard.php'">Cancel</button>
                 </div>
             </form>
         </section>

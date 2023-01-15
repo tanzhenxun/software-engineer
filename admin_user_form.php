@@ -123,7 +123,7 @@ include "reusable_components/user_session.php"
             ?>
             <form class="d-sm-flex d-block mt-5 justify-content-center" action="<?php echo $_SERVER["PHP_SELF"];
                                                 ?>" method="POST" enctype="multipart/form-data">
-                <div class="col-sm-10 col-12 ms-5 ">
+                <div class="col-sm-10 col-12 mx-sm-5 mx-0">
                     <div class="mb-3">
                         <label for="exampleInputUsername" class="form-label">Username</label>
                         <input type="text" class="form-control" id="exampleInputusername" aria-describedby="username" name='username'>
@@ -172,8 +172,8 @@ include "reusable_components/user_session.php"
                         </select>
                     </div>
                     <div class="d-flex mt-5 justify-content-center">
-                        <button type="submit" class="btn btn-secondary col-4">Create</button>
-                        <button type="button" class="btn btn-secondary ms-3 col-4" onclick="window.location.href = 'admin_user_list.php'">Cancel</button>
+                        <button type="submit" class="btn btn-success col-4">Create</button>
+                        <button type="button" class="btn btn-danger ms-3 col-4" onclick="window.location.href = 'admin_user_list.php'">Cancel</button>
                     </div>
 
                 </div>
